@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Flashcards</title>
+<link rel='stylesheet' href='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css' />
+<link href='css/css_page_flip.css' rel='stylesheet' type='text/css' />
+<link href='css/jquery.booklet.1.3.1.css' rel='stylesheet' type='text/css' />
+<script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+<script src='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js' type='text/javascript'></script>
+<script src='js/jquery.easing.1.3.js'></script>
+<script src='js/jquery.booklet.1.3.1.js'></script>
+<script type='text/javascript' src='js/jquery.transform.js'></script>
+<script type='text/javascript' src='js/jquery.grab.js'></script>
+<script type='text/javascript' src='js/mod.csstransforms.min.js'></script>
+<script type='text/javascript' src='js/audiojs/audio.min.js'></script>
+<script>
+var wt;
+var ht;
+// function to detect browser type and set book size accordingly
+function detectBrowser() {
+var useragent = navigator.userAgent;
+if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1)
+{
+wt = 300;
+ht = 300;
+}
+else
+{
+wt = 800;
+ht = 400;
+}
+};
+// Check browser and set book size on screen
+detectBrowser();
+$(function() {
+//multiple books
+$('.resource').booklet({
+width: wt,
+height: ht,
+speed: 700,
+arrows: true,
+tabs: false,
+manual: false,
+overlays:false
+});
+});
+// Initialise audio player
+audiojs.events.ready(function() {
+var as = audiojs.createAll();
+});
+</script>
+</head>
+<body>
+<div data-role='page' data-theme='b'>
+<div data-role='header' data-theme='c'>
+<h3>Animals</h3>
+</div>
+<div data-role='content' data-content-theme='c'>
+<div class='resource'> 
+<div>
+<img src='images/flashcards/German/Animals/adler.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/adler.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/affe.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/affe.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/baer.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/baer.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/bedroht.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/bedroht.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/delphin.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/delphin.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/ente.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/ente.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/esel.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/esel.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/ferkel.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/ferkel.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/fledermaus.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/fledermaus.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/fohlen.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/fohlen.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/frosch.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/frosch.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/furchterregend.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/furchterregend.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/gefahrlich.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/gefahrlich.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/goldfisch.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/goldfisch.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/gross.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/gross.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/hamster.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/hamster.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/hase.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/hase.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/hund.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/hund.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/kaetzchen.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/kaetzchen.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/katze.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/katze.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/klein.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/klein.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/kueken.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/kueken.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/kuh.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/kuh.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/lamm.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/lamm.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/laut.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/laut.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/leise.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/leise.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/loewe.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/loewe.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/loewenjunges.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/loewenjunges.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/maus.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/maus.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/pandabaer.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/pandabaer.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/pferd.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/pferd.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/schafe.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/schafe.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/schlange.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/schlange.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/schwein.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/schwein.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/spinne.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/spinne.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/suess.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/suess.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/tiger.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/tiger.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/uebelriechend.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/uebelriechend.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/vogel.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/vogel.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/welpe.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/welpe.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Animals/wolf.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Animals/wolf.mp3'preload='auto' />
+</div>
+</div>
+</div>
+<div data-role='footer' data-theme='b'>
+<h4>Newcastle University</h4>
+</div><!-- Footer -->
+</div>
+</body>
+</html>

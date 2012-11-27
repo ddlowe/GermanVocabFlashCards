@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Flashcards</title>
+<link rel='stylesheet' href='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css' />
+<link href='css/css_page_flip.css' rel='stylesheet' type='text/css' />
+<link href='css/jquery.booklet.1.3.1.css' rel='stylesheet' type='text/css' />
+<script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+<script src='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js' type='text/javascript'></script>
+<script src='js/jquery.easing.1.3.js'></script>
+<script src='js/jquery.booklet.1.3.1.js'></script>
+<script type='text/javascript' src='js/jquery.transform.js'></script>
+<script type='text/javascript' src='js/jquery.grab.js'></script>
+<script type='text/javascript' src='js/mod.csstransforms.min.js'></script>
+<script type='text/javascript' src='js/audiojs/audio.min.js'></script>
+<script>
+var wt;
+var ht;
+// function to detect browser type and set book size accordingly
+function detectBrowser() {
+var useragent = navigator.userAgent;
+if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1)
+{
+wt = 300;
+ht = 300;
+}
+else
+{
+wt = 800;
+ht = 400;
+}
+};
+// Check browser and set book size on screen
+detectBrowser();
+$(function() {
+//multiple books
+$('.resource').booklet({
+width: wt,
+height: ht,
+speed: 700,
+arrows: true,
+tabs: false,
+manual: false,
+overlays:false
+});
+});
+// Initialise audio player
+audiojs.events.ready(function() {
+var as = audiojs.createAll();
+});
+</script>
+</head>
+<body>
+<div data-role='page' data-theme='b'>
+<div data-role='header' data-theme='c'>
+<h3>Bodyparts</h3>
+</div>
+<div data-role='content' data-content-theme='c'>
+<div class='resource'> 
+<div>
+<img src='images/flashcards/German/Bodyparts/augenbrauen.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/augenbrauen.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/gesicht.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/gesicht.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/haare.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/haare.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/hals.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/hals.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/hand.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/hand.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/lippen.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/lippen.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/mund.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/mund.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/nase.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/nase.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/schnurrbart.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/schnurrbart.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/schulter.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/schulter.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Bodyparts/wimpern.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Bodyparts/wimpern.mp3'preload='auto' />
+</div>
+</div>
+</div>
+<div data-role='footer' data-theme='b'>
+<h4>Newcastle University</h4>
+</div><!-- Footer -->
+</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Flashcards</title>
+<link rel='stylesheet' href='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css' />
+<link href='css/css_page_flip.css' rel='stylesheet' type='text/css' />
+<link href='css/jquery.booklet.1.3.1.css' rel='stylesheet' type='text/css' />
+<script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+<script src='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js' type='text/javascript'></script>
+<script src='js/jquery.easing.1.3.js'></script>
+<script src='js/jquery.booklet.1.3.1.js'></script>
+<script type='text/javascript' src='js/jquery.transform.js'></script>
+<script type='text/javascript' src='js/jquery.grab.js'></script>
+<script type='text/javascript' src='js/mod.csstransforms.min.js'></script>
+<script type='text/javascript' src='js/audiojs/audio.min.js'></script>
+<script>
+var wt;
+var ht;
+// function to detect browser type and set book size accordingly
+function detectBrowser() {
+var useragent = navigator.userAgent;
+if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1)
+{
+wt = 300;
+ht = 300;
+}
+else
+{
+wt = 800;
+ht = 400;
+}
+};
+// Check browser and set book size on screen
+detectBrowser();
+$(function() {
+//multiple books
+$('.resource').booklet({
+width: wt,
+height: ht,
+speed: 700,
+arrows: true,
+tabs: false,
+manual: false,
+overlays:false
+});
+});
+// Initialise audio player
+audiojs.events.ready(function() {
+var as = audiojs.createAll();
+});
+</script>
+</head>
+<body>
+<div data-role='page' data-theme='b'>
+<div data-role='header' data-theme='c'>
+<h3>Countries</h3>
+</div>
+<div data-role='content' data-content-theme='c'>
+<div class='resource'> 
+<div>
+<img src='images/flashcards/German/Countries/aegypten.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/aegypten.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/afrika.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/afrika.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/algerien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/algerien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/antarktis.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/antarktis.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/argentinien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/argentinien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/asien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/asien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/australien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/australien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/australien2.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/australien2.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/brasilien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/brasilien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/chile.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/chile.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/china.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/china.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/daenemark.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/daenemark.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/deutschland.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/deutschland.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/europa.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/europa.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/frankreich.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/frankreich.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/ghana.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/ghana.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/greichenland.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/greichenland.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/grossbritannien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/grossbritannien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/indien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/indien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/israel.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/israel.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/italien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/italien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/japan.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/japan.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/kanada.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/kanada.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/kenia.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/kenia.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/malaysia.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/malaysia.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/marokko.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/marokko.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/mexiko.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/mexiko.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/neuseeland.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/neuseeland.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/nordamerika.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/nordamerika.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/norwegen.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/norwegen.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/oesterreich.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/oesterreich.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/polen.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/polen.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/portugal.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/portugal.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/russland.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/russland.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/schweden.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/schweden.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/schweiz.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/schweiz.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/spanien.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/spanien.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/suedafrika.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/suedafrika.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/suedamerika.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/suedamerika.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/tschechischerep.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/tschechischerep.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/tuerkei.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/tuerkei.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/ukraine.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/ukraine.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/ungarn.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/ungarn.mp3'preload='auto' />
+</div>
+<div>
+<img src='images/flashcards/German/Countries/vereinigtenstaaten.JPG' width='100%'>
+<audio src='http://linguacast.ncl.ac.uk/m-lrc/mp3/German/Countries/vereinigtenstaaten.mp3'preload='auto' />
+</div>
+</div>
+</div>
+<div data-role='footer' data-theme='b'>
+<h4>Newcastle University</h4>
+</div><!-- Footer -->
+</div>
+</body>
+</html>
